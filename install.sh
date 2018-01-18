@@ -14,7 +14,7 @@ echo 'finished installing third party jars'
 
 echo 'Running flyway via Gradle to generate database tables'
 ./gradlew db:flywayMigrate | tee gradle.output
-if grep -Fq "BUILD SUCCESSFUL" install_jars.output ; then
+if grep -Fq "BUILD SUCCESSFUL" gradle.output ; then
     echo "DB tables created"
 else
     echo "Could not create DB tables using gradle"
