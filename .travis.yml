@@ -3,6 +3,7 @@ language: java
 before_install:
   - chmod +x install.sh
   - chmod +x custom_build.sh
+  - chmod +x install_3rd_party_jars.sh
 
 install: ./install.sh
 
