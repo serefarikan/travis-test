@@ -16,6 +16,8 @@ mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  -Dfile=ehr
 
 mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  -Dfile=applib/session-logger-service-1.0-SNAPSHOT.jar       -DgroupId=ethercis  -DartifactId=session-logger-service -Dversion=1.0-SNAPSHOT  -Dpackaging=jar
 
+cd 3rdparty
+
 mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  -Dfile=xml-serializer-1.0.9.jar      -DgroupId=org.openehr  -DartifactId=xml-serializer -Dversion=1.0.9  -Dpackaging=jar
 
 mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  -Dfile=rm-builder-1.0.9.jar      -DgroupId=org.openehr  -DartifactId=rm-builder -Dversion=1.0.9  -Dpackaging=jar
