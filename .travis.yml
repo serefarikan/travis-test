@@ -2,5 +2,8 @@ language: java
 
 before_install:
   - chmod +x install.sh
+  - chmod +x custom_build.sh
 
 install: ./install.sh
+
+script: ./custom_build.sh
