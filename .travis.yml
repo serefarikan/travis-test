@@ -4,6 +4,7 @@ before_install:
   - chmod +x install.sh
   - chmod +x custom_build.sh
   - chmod +x install_3rd_party_jars.sh
+  - /etc/init.d/postgresql stop
   - docker run -it --rm  --name="pgtest" -e POSTGRES_PASSWORD=postgres -p 5432:5432 serefarikan/ethercis-pg:v0
 
 install: ./install.sh
